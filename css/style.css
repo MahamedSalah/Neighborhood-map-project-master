@@ -1,0 +1,79 @@
+/* Application style */
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+/* searchIcon style */
+.searchIcon .search input{
+ 	height: 50px;
+    border: solid 3px;
+    padding: 10px;
+    color: #F00;
+    font-size: 30px;
+}
+/* searchlist style */
+.application {
+	width: 100%;
+    display: flex;
+}
+.application .map{
+    height: 600px;
+    flex-grow:4;
+}
+.application .locationsList{
+    height: 450px;
+    background-color:#F00;
+    overflow: hidden;
+    flex-grow:1;
+    border: solid 3px ;
+    border-radius: 30px;
+    padding-right:10px;
+    color:#FFF;
+    text-align: center;
+}
+.application .locationsList .list{
+    color:#FFF;
+}
+.application .locationsList .list .place:hover{
+    background-color:#00F;
+}
+.application .locationsList .list .place{
+	cursor: pointer;
+    padding: 20px;
+	list-style:square;
+}
+/*for resposive */
+@media (max-width:767px) {
+    .application{
+        display: grid;
+    }
+    .application .map{
+        width: 100%;
+    }
+    .application .locationsList , .searchIcon .search input{
+        width: 100%;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        width: 780px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 1000px;
+    }
+}
+@media (min-width:1200px)
+{
+    .container {
+        width: 1200px;
+    }
+}
+.container {
+    margin: auto;
+    max-width: 100%;
+}
